@@ -1,0 +1,1 @@
+Projektet Writeit är en webbapplikation under utveckling som tillåter användare att skapa konton, lägga till böcker och skriva egna sammanfattningar för varje bok. Syftet är att bygga en community där användare kan dela och upptäcka boksammanfattningar. Projektet är i ett tidigt skede och behöver förbättringar både i funktionalitet och design. 
