@@ -1,0 +1,56 @@
+﻿@model List<Bocker>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="~/css/site.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="~/css/syddadsida.css" rel="stylesheet" />
+    <title>Document</title>
+
+</head>
+<body>
+
+    <header class="nav-bar">
+        <nav>
+
+            <ul>
+                <img src="~/Bilder/logo.png" alt="Sample Photo" class="logo" />
+                <li><a href="#">Om ss</a></li>
+                <li><a href="#">Kontakt</a></li>
+                <li> <a asp-action="Loggaut" asp-controller="Login">Logga ut</a> </li>
+            </ul>
+        </nav>
+    </header>
+    <h1></h1>
+    <h2>Sammanfattningar</h2>
+    <a asp-action="LaggTillBok" asp-controller="Home">Lägg till en bok</a>
+    
+    
+    @foreach (var item in Model){
+
+    
+   
+    <div id="innehall" class="card" style="width: 18rem;">
+        <img class="card-img-top" src="~/Bilder/book.png" height="150px" width="150px" alt="Card image cap">
+        <div class="card-body">
+                <h5 class="card-title"></h5>
+                <p>Boknamn: @Html.DisplayFor(b=>item.Boknamn)</p>
+                <p>Författare:@Html.DisplayFor(b=>item.Forfattare) </p>
+                <button id="samman-knapp" class="btn btn-primary" onclick="doljaVisa()">Läs sammanfattning</button>
+            <p class="sammanfattning-text">@Html.DisplayFor(b=>item.Sammanfattning)</p>
+        </div>
+    </div>
+    }
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+   
+    <script src="~/js/site.js"></script>
+    <style>
+        body{
+            background-color: #F7F8F6;
+        }
+    </style>
+</body>
+</html>

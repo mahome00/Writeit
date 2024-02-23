@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link href="~/css/site.css" rel="stylesheet" />
+
+    <title>Document</title>
+
+</head>
+<body>
+
+    <header class="nav-bar">
+        <nav>
+
+            <ul>
+                <img src="~/Bilder/logo.png" alt="Sample Photo" class="logo"/>
+                <li><a href="#">Om ss</a></li>
+                <li><a href="#">Kontakt</a></li>
+                <li> <a asp-action="Index" asp-controller="Login">Login</a> </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="valkommen">
+
+        <h1>Välkommen till WriteIT</h1>
+        <p>Vad kan du göra i vår hemsida?</p>
+    </div>
+    <div class="content">
+        <div class="sammanfattning">
+            <div class="div-img">
+                <img src="~/Bilder/Thesis-rafiki (1).png" alt="Sample Photo" />
+            </div>
+            <div class="txt1">
+
+                <ul>
+                    <li>Du kan skriva sammanfattningar av dina böcker och artiklar</li>
+                    <li>Du kan skapa att-läsa lista så missar du ingent</li>
+                    <li>Du kan lätt få tillgång till dina sammanfattningar med hjälp av kategorier</li>
+                </ul>
+                <div class="registera">
+                    <p>Kom igång och registrera</p>
+                    <form asp-action="Index" asp-controller="Registrera">
+                        <input type="submit" class="btn btn btn-success btn-lg" id="btn" value="Registrera"</input>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- <div class="att-lasa">
+            <div class="img">
+                <img src="Thesis-rafiki (1).png" alt="ikon">
+            </div>
+            <div class="txt">
+                <h1>Skapa to-read-list</h1>
+                <p>Du kan skapa to read-list och lagra den på din to-read-list.</p>
+            </div>
+        </div> -->
+        <!-- <div class="info">
+            <ul>
+                <li><h2>Du kan skriva sammanfattningar av dina böcker och artiklar</h2></li>
+                <li ><h2>Du kan skapa att-läsa lista så missar du ingent</h2></li>
+                <li><h2>Du kan lätt få tillgång till dina sammanfattningar med hjälp av kategorier</h2></li>
+            </ul>
+
+
+        </div> -->
+    </div>
+    <!-- <div class="registrera">
+        <p> Kom igång och registera</p>
+        <button>Registera</button>
+    </div> -->
+    <style>
+        #btn{
+        display: flex;
+        margin: auto;
+            background-color: #6AE702;
+            color: black;
+        border-style: none;
+        border-radius: 10px;
+        justify-content:center;
+        }
+
+    </style>
+
+    <script src="~/js/site.js"></script>
+    
+</body>
+</html>

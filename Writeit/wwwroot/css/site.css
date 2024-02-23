@@ -1,0 +1,191 @@
+body {
+    background-color: rgb(246, 244, 244);
+    margin: 0;
+    padding: 0;
+}
+
+/* Nav-bar style */
+.nav-bar {
+    background-color: #597f57;
+    background-size: 100%;
+    height: 80px;
+    background-size: cover;
+    padding: 5px;
+}
+
+    .nav-bar li a:hover {
+        background-color: rgba(8, 8, 8, 0.493);
+        border-radius: 5px;
+        transition: ease-in-out 0.2s;
+    }
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    float: right;
+    padding: 10px;
+}
+
+.logo {
+    display: flex;
+    width: 70px;
+    height: 65px;
+    position: absolute;
+    top: 15px;
+    left: 80px;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 20px;
+}
+
+    nav ul li a {
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 18px;
+        text-transform: uppercase;
+        color: #fff;
+    }
+/* Välkommen delen */
+.valkommen h1 {
+    display: flex;
+    justify-content: center;
+    color: #000000e1;
+    text-decoration: overline
+}
+
+.valkommen p {
+    display: flex;
+    justify-content: center;
+    font-size: large;
+}
+
+/* Innehåll delen */
+.content {
+    background-color: #d2d3d241;
+    height: 100%;
+    border-style: inset;
+}
+/* Beskrivnings delen */
+.sammanfattning {
+    height: 700px;
+    width: auto;
+}
+
+.div-img {
+    display: flex;
+    width: auto;
+    height: 700px;
+    width: 650px;
+    float: right;
+    margin-top: 10px;
+}
+
+.txt1 {
+    height: 700px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* display: flex;
+    background-color: red;
+    border-style: dotted;
+    height: 500px;
+     */
+}
+
+    .txt1 ul {
+        position: relative;
+        left: 30px;
+    }
+
+        .txt1 ul li {
+            font-size: 30px;
+            margin: 40px;
+        }
+
+/* Kom igång delen */
+.registera {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+    .registera p {
+        display: flex;
+        justify-content: center;
+        font-size: 17px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin-bottom: 30px;
+    }
+
+    .registera input {
+        display: flex;
+        margin: auto;
+        font-size: 25px;
+        background-color: #316e2e;
+        color: rgb(242, 233, 233);
+        border-style: none;
+        border-radius: 15px;
+        justify-content:center;
+    }
+         
+   
+    
+
+        .registera button:hover {
+            background-color: #316e2ec8;
+        }
+
+
+
+
+
+
+/* skapakonto style */
+
+.container {
+    width: 600px;
+    height: 670px;
+    background-color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(239, 247, 238, 0.342);
+    padding: 10px;
+    border-style: groove;
+}
+
+    .container div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 60px;
+    }
+
+        .container div img {
+            width: 60px;
+            height: 60px;
+            display: flex;
+            left: 200px;
+        }
+
+        .container div input {
+            margin: 5px;
+            padding: 7px;
+            width: 300px;
+        }
+
+.reg_btn {
+    background-color: #00f721f7;
+    border-style: solid;
+}
+
+    .reg_btn:hover {
+        background-color: #00f7219e;
+    }
+
